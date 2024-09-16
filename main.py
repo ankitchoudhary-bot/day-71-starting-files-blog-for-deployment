@@ -297,6 +297,6 @@ def contact():
 #         connection.login(MAIL_ADDRESS, MAIL_APP_PW)
 #         connection.sendmail(MAIL_ADDRESS, MAIL_APP_PW, email_message)
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))  # Default to port 10000 if not set
-    app.run(host='0.0.0.0', port=port)
+
+if __name__ == "__main__":
+    app.run(debug=False, port=5001)
